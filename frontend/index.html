@@ -1,10 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi Web de Servicios</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios Express a Domicilio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #0078d4;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      padding: 50px;
+      text-align: center;
+      background-color: #e6f0fa;
+    }
+    .hero h1 {
+      margin-bottom: 20px;
+    }
+    .hero input[type="text"] {
+      padding: 10px;
+      width: 60%;
+      max-width: 400px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .hero button {
+      padding: 10px 20px;
+      background-color: #0078d4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .hero button:hover {
+      background-color: #005a9e;
+    }
+    .services {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+    }
+    .service-card {
+      background-color: white;
+      width: 250px;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .service-card img {
+      width: 80px;
+      margin-bottom: 15px;
+    }
+    footer {
+      background-color: #0078d4;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hola Mundo desde Azure Static Web Apps 🚀</h1>
-  <p>Este será el inicio de tu proyecto.</p>
+  <header>
+    <h1>Servicios Express</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Servicios</a>
+      <a href="#">Citas</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Encuentra el servicio que necesitas al instante</h1>
+    <input type="text" placeholder="Buscar servicio...">
+    <button>Buscar</button>
+  </section>
+
+  <section class="services">
+    <div class="service-card">
+      <img src="https://img.icons8.com/color/96/000000/plumbing.png" alt="Plomería">
+      <h3>Plomería</h3>
+      <p>Soluciona tus problemas de tuberías y grifos rápido y confiable.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://img.icons8.com/color/96/000000/electricity.png" alt="Eléctrico">
+      <h3>Eléctrico</h3>
+      <p>Reparación de instalaciones eléctricas y mantenimiento de seguridad.</p>
+    </div>
+    <div class="service-card">
+      <img src="https://img.icons8.com/color/96/000000/masonry.png" alt="Albañilería">
+      <h3>Albañilería</h3>
+      <p>Construcción, remodelaciones y reparaciones en tu hogar.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Servicios Express. Todos los derechos reservados.
+  </footer>
 </body>
 </html>
